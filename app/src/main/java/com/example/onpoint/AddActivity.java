@@ -4,17 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.TimePicker;
 
 import java.util.Calendar;
 
 public class AddActivity extends AppCompatActivity implements View.OnClickListener {
 
+    TextView canncel;
     EditText date_edt, time_edt;
     Button date_btn, time_btn;
     private int mYear, mMonth, mDay, mHour, mMinute;
@@ -64,5 +67,11 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
             },mHour,mMinute,false);
             timePickerDialog.show();
         }
+
+        canncel = findViewById(R.id.cancel_btn);
+        canncel.setOnClickListener(view -> {
+            Intent i = new Intent(AddActivity.this, MainActivity.class);
+            startActivity(i);
+        });
     }
 }

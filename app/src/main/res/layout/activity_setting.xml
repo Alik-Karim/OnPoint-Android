@@ -1,75 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Setting"
-    android:orientation="vertical">
+    tools:context=".Setting">
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/imageView8"
         android:layout_width="match_parent"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bawah" />
+
+    <ImageView
+        android:id="@+id/setting_ijo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Setting"
-            android:textColor="@color/teal_200"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_marginHorizontal="60dp"/>
-
-    </LinearLayout>
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/settin_ijo" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/account_btn"
         android:layout_width="299dp"
         android:layout_height="58dp"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="160dp"
         android:background="@drawable/shape_login"
         android:text="account"
         android:textColor="@color/white"
         android:textSize="17sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/help_btn"
         android:layout_width="299dp"
         android:layout_height="58dp"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/shape_login"
         android:text="help"
         android:textColor="@color/white"
         android:textSize="17sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_btn" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/about_btn"
         android:layout_width="299dp"
         android:layout_height="58dp"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/shape_login"
         android:text="about"
         android:textColor="@color/white"
         android:textSize="17sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_btn" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout_btn"
         android:layout_width="299dp"
         android:layout_height="58dp"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/shape_logout"
         android:text="log out"
         android:textColor="@color/white"
         android:textSize="17sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help_btn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="70dp"
+        android:text="Setting"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bell4_bwh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toStartOf="@+id/setting_ijo"
+        app:srcCompat="@drawable/bell" />
+
+    <ImageView
+        android:id="@+id/order4_bwh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:srcCompat="@drawable/order" />
+
+    <ImageView
+        android:id="@+id/user4_bwh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bell4_bwh"
+        app:layout_constraintStart_toEndOf="@+id/order4_bwh"
+        app:srcCompat="@drawable/user" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

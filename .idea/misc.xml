@@ -10,14 +10,16 @@
         <entry key="..\:/OnPoint/app/src/main/res/drawable/shape_profile.xml" value="0.26614583333333336" />
         <entry key="..\:/OnPoint/app/src/main/res/drawable/shape_putih.xml" value="0.26614583333333336" />
         <entry key="..\:/OnPoint/app/src/main/res/drawable/shapemuda.xml" value="0.190625" />
+        <entry key="..\:/OnPoint/app/src/main/res/layout/activity_about.xml" value="0.25" />
         <entry key="..\:/OnPoint/app/src/main/res/layout/activity_add.xml" value="0.264" />
         <entry key="..\:/OnPoint/app/src/main/res/layout/activity_forgot.xml" value="0.2" />
+        <entry key="..\:/OnPoint/app/src/main/res/layout/activity_help.xml" value="0.25" />
         <entry key="..\:/OnPoint/app/src/main/res/layout/activity_load_screen.xml" value="0.264" />
         <entry key="..\:/OnPoint/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/OnPoint/app/src/main/res/layout/activity_login2.xml" value="0.264" />
         <entry key="..\:/OnPoint/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/OnPoint/app/src/main/res/layout/activity_profile.xml" value="0.2" />
-        <entry key="..\:/OnPoint/app/src/main/res/layout/activity_profile_edit.xml" value="0.176" />
+        <entry key="..\:/OnPoint/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+        <entry key="..\:/OnPoint/app/src/main/res/layout/activity_profile_edit.xml" value="0.2" />
         <entry key="..\:/OnPoint/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/OnPoint/app/src/main/res/layout/activity_setting.xml" value="0.264" />
       </map>

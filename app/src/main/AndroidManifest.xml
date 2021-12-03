@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OnPoint">
         <activity
+            android:name=".About"
+            android:exported="true" />
+        <activity
+            android:name=".Help"
+            android:exported="true" />
+        <activity
             android:name=".Setting"
             android:exported="true" />
         <activity

@@ -9,11 +9,9 @@ import android.widget.TextView;
 
 public class Login extends AppCompatActivity {
 
-    androidx.appcompat.widget.AppCompatButton login_btn;
+    androidx.appcompat.widget.AppCompatButton login;
     TextView register;
     TextView forgotpass;
-    TextView username;
-    TextView password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +30,8 @@ public class Login extends AppCompatActivity {
             startActivity(i);
         });
 
-        login_btn = findViewById(R.id.login_btn);
-        login_btn.setOnClickListener(view -> {
+        login = findViewById(R.id.login_btn);
+        login.setOnClickListener(view -> {
             Intent i = new Intent(Login.this, MainActivity.class);
             startActivity(i);
         });
