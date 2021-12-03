@@ -11,65 +11,79 @@
         android:id="@+id/imageView7"
         android:layout_width="859dp"
         android:layout_height="904dp"
-        app:srcCompat="@drawable/shapegarissetengah"
-        tools:layout_editor_absoluteX="-224dp"
-        tools:layout_editor_absoluteY="-124dp" />
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48"
+        app:srcCompat="@drawable/shapegarissetengah" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="334dp"
         android:layout_height="196dp"
-        app:srcCompat="@drawable/shape_putih"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="168dp" />
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/shape_putih" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="67dp"
         android:layout_height="59dp"
-        android:layout_marginEnd="172dp"
-        android:layout_marginBottom="484dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
         app:srcCompat="@drawable/user_photo" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:text="Profile"
         android:textColor="@color/teal_200"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="51dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:text="Rating"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="423dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
         android:text="TextView"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="468dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
         android:text="Thoriq al kurma"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="255dp" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
     <TextView
         android:id="@+id/textView7"
@@ -77,15 +91,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="thoriqkurma@gmail.com"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:layout_editor_absoluteX="128dp" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="67dp"
         android:layout_height="24dp"
-        app:srcCompat="@drawable/edittt"
-        tools:layout_editor_absoluteX="291dp"
-        tools:layout_editor_absoluteY="327dp" />
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:srcCompat="@drawable/edittt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

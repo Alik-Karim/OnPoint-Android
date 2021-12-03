@@ -12,21 +12,23 @@
         android:layout_width="414dp"
         android:layout_height="683dp"
         android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/shapemuda"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-2dp" />
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="330dp"
         android:layout_height="201dp"
         android:layout_gravity="center"
-        android:layout_marginTop="177dp"
+        android:layout_marginTop="80dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="40dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:layout_width="wrap_content"
@@ -91,27 +93,30 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="126dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:text="Cancel"
         android:textColor="#FF7777"
         android:textSize="15sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="35dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
 
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="250dp"
         android:layout_height="58dp"
         android:layout_gravity="center"
+        android:layout_marginTop="60dp"
         android:background="@drawable/shape_login"
         android:text="CREATE"
         android:textColor="@color/white"
         android:textSize="17sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="604dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_edt_text"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/date_edt_text"
@@ -122,6 +127,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Date"
+        app:layout_constraintEnd_toStartOf="@+id/date_btn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         tools:ignore="TouchTargetSizeCheck" />
@@ -141,13 +147,15 @@
         android:id="@+id/time_edt_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Time"
+        app:layout_constraintEnd_toStartOf="@+id/time_btn"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/date_edt_text"
-        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="40dp" />
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/time_btn"

@@ -82,7 +82,7 @@
             android:layout_width="1000dp"
             android:layout_height="1000dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="1dp"
+            android:layout_marginBottom="0dp"
             android:outlineSpotShadowColor="@color/black"
             android:src="@drawable/vector_bawah" />
     </RelativeLayout>
