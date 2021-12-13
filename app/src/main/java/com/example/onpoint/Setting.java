@@ -30,7 +30,7 @@ public class Setting extends AppCompatActivity {
 
         help = findViewById(R.id.help_btn);
         help.setOnClickListener(view -> {
-            Intent i = new Intent(Setting.this, Profile.class);
+            Intent i = new Intent(Setting.this, Help.class);
             startActivity(i);
         });
 
@@ -42,17 +42,17 @@ public class Setting extends AppCompatActivity {
 
         logout = findViewById(R.id.logout_btn);
         logout.setOnClickListener(view -> {
-            Intent i = new Intent(Setting.this, Profile.class);
+            Intent i = new Intent(Setting.this, Login.class);
             startActivity(i);
         });
 
         //bagian bawah//
 
-        order = findViewById(R.id.order4_bwh);
-        order.setOnClickListener(view -> {
-            Intent i = new Intent(Setting.this, MainActivity.class);
-            startActivity(i);
-        });
+//        order = findViewById(R.id.order4_bwh);
+//        order.setOnClickListener(view -> {
+//            Intent i = new Intent(Setting.this, MainActivity.class);
+//            startActivity(i);
+//        });
 
 //        friends = findViewById(R.id.user4_bwh);
 //        friends.setOnClickListener(view -> {

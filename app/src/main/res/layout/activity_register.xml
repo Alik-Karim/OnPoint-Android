@@ -97,6 +97,26 @@
             android:textColor="@color/black"
             android:inputType="textPassword" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textColor="#129EA6"
+            android:textSize="13sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="58dp"
+            android:background="@drawable/shape_form"
+            android:hint="Password"
+            android:layout_marginTop="5dp"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:inputType="textPassword" />
+
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton

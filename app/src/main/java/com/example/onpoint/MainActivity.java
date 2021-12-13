@@ -44,11 +44,11 @@ public class MainActivity extends AppCompatActivity {
 //            startActivity(i);
 //        });
 
-        setting = findViewById(R.id.setting1_bwh);
-        setting.setOnClickListener(view -> {
-            Intent i = new Intent(MainActivity.this, Setting.class);
-            startActivity(i);
-        });
+//        setting = findViewById(R.id.setting1_bwh);
+//        setting.setOnClickListener(view -> {
+//            Intent i = new Intent(MainActivity.this, Setting.class);
+//            startActivity(i);
+//        });
 
     }
 }

@@ -2,6 +2,7 @@ package com.example.onpoint;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -32,8 +33,8 @@ public class Login extends AppCompatActivity {
 
         login = findViewById(R.id.login_btn);
         login.setOnClickListener(view -> {
-            Intent i = new Intent(Login.this, MainActivity.class);
-            startActivity(i);
+            Intent i = new Intent(Login.this, MainFragment.class);
+            getApplicationContext(i);
         });
 
 
